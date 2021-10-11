@@ -25,7 +25,6 @@ class Pizza(db.Model):
 
     @property
     def serialize(self):
-        print(self.topping)
         return {
             'id': self.id,
             'name': self.name,
